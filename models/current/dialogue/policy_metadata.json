@@ -1,0 +1,64 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "quantity",
+        "date",
+        "color",
+        "brand",
+        "state",
+        "invoice_id",
+        "city",
+        "model"
+      ]
+    },
+    "utter_bye": {
+      "slots": []
+    },
+    "get_product_storage": {
+      "slots": [
+        "ROM"
+      ]
+    },
+    "get_product_price": {
+      "slots": [
+        "price"
+      ]
+    },
+    "utter_payment_query": {
+      "slots": []
+    },
+    "utter_check_policy": {
+      "slots": []
+    },
+    "get_product_color": {
+      "slots": [
+        "color"
+      ]
+    },
+    "utter_package_query": {
+      "slots": []
+    },
+    "forward_complain": {
+      "slots": [
+        "complain_id"
+      ]
+    },
+    "utter_post_query": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.11.1",
+  "python": "3.6.7",
+  "max_histories": [
+    null,
+    3,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ]
+}

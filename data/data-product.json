@@ -1,0 +1,2125 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hello",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "I am looking for an apple iphone x 32 GB",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "iphone x",
+            "entity": "model"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "value": "32 GB",
+            "entity": "ROM"
+          }
+        ]
+      },
+      {
+        "text": "What is the price of apple iphone x 16 GB?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "iphone x",
+            "entity": "model"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "16 GB",
+            "entity": "ROM"
+          }
+        ]
+      },
+      {
+        "text": "Do you sell apple iphone x?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "iphone x",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What apple phones do you have?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "For how much can I get a samsung galaxy s10?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "galaxy s10",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I want to purchase a samsung note 8",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "note 8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for a samsung galaxy s8",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "value": "galaxy s8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Do you keep samsung galaxy s7?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 20,
+            "end": 29,
+            "value": "galaxy s7",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I would like to buy huawei mate 20 pro",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "huawei",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 38,
+            "value": "mate 20 pro",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Can you show me a huawei mate 20 pro?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "huawei",
+            "entity": "brand"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "value": "mate 20 pro",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Do you sell a huawei mate 20 pro?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "huawei",
+            "entity": "brand"
+          },
+          {
+            "start": 21,
+            "end": 32,
+            "value": "mate 20 pro",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I'm looking for a nokia 8",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 24,
+            "end": 25,
+            "value": "8",
+            "entity": "model"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "nokia",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you sell nokia 8?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 18,
+            "end": 19,
+            "value": "8",
+            "entity": "model"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "value": "nokia",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "What is the price of nokia 8?",
+        "intent": "product_price",
+        "entities": [
+          {
+            "start": 27,
+            "end": 28,
+            "value": "8",
+            "entity": "model"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "nokia",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you keep any nokia 8?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 22,
+            "end": 23,
+            "value": "8",
+            "entity": "model"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "nokia",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you accept Paypal?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "Paypal",
+            "entity": "online_payment"
+          }
+        ]
+      },
+      {
+        "text": "Can I pay you through Paypal?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "Paypal",
+            "entity": "online_payment"
+          }
+        ]
+      },
+      {
+        "text": "Do you accept VISA?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "VISA",
+            "entity": "credit_card"
+          }
+        ]
+      },
+      {
+        "text": "Can I pay you with VISA?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "VISA",
+            "entity": "credit_card"
+          }
+        ]
+      },
+      {
+        "text": "Do you accept MOBIAMO?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "MOBIAMO",
+            "entity": "mobile_payment"
+          }
+        ]
+      },
+      {
+        "text": "Can I pay you through MOBIAMO?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "MOBIAMO",
+            "entity": "mobile_payment"
+          }
+        ]
+      },
+      {
+        "text": "Do you accept POLi?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "POLi",
+            "entity": "internet_bank"
+          }
+        ]
+      },
+      {
+        "text": "Can I pay you through Mint?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "Mint",
+            "entity": "prepaid_card"
+          }
+        ]
+      },
+      {
+        "text": "Can I pay you with POLi?",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "POLi",
+            "entity": "internet_bank"
+          }
+        ]
+      },
+      {
+        "text": "I am from Canberra, Capital Territory",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "Canberra",
+            "entity": "city"
+          },
+          {
+            "start": 20,
+            "end": 37,
+            "value": "Capital Territory",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I live in Melbourne, Victoria",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "Melbourne",
+            "entity": "city"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "value": "Victoria",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I am calling from Sydney, New South Wales",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "Sydney",
+            "entity": "city"
+          },
+          {
+            "start": 26,
+            "end": 41,
+            "value": "New South Wales",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I want it delivered in Brisbane, Queensland",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "Brisbane",
+            "entity": "city"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "Queensland",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I reside in Adelaide, South Australia",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "Adelaide",
+            "entity": "city"
+          },
+          {
+            "start": 22,
+            "end": 37,
+            "value": "South Australia",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I live in Perth, Western Australia",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "Perth",
+            "entity": "city"
+          },
+          {
+            "start": 17,
+            "end": 34,
+            "value": "Western Australia",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I am from Hobart, Tasmania",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Hobart",
+            "entity": "city"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "Tasmania",
+            "entity": "state"
+          }
+        ]
+      },
+      {
+        "text": "I live in Darwin, Northern Territory",
+        "intent": "customer_address",
+        "entities": [
+          {
+            "start": 18,
+            "end": 36,
+            "value": "Northern Territory",
+            "entity": "state"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Darwin",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "How are you going to send it ?",
+        "intent": "delivery_details",
+        "entities": []
+      },
+      {
+        "text": "What courier service you're going to use?",
+        "intent": "delivery_details",
+        "entities": []
+      },
+      {
+        "text": "I'm looking for a motorola g7",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "value": "g7",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Do you sell motorola g6?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "value": "g6",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "For how much can I get a motorola z2 play?",
+        "intent": "product_price",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "value": "z2 play",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I would like to buy a motorola e5",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "value": "e5",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What motorola phones do you sell?",
+        "intent": "product_ask",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "motorola",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Hey",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "I would like to buy 3 of those.",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 20,
+            "end": 21,
+            "value": "3",
+            "entity": "quantity"
+          }
+        ]
+      },
+      {
+        "text": "I want to buy 2 phones",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 14,
+            "end": 15,
+            "value": "2",
+            "entity": "quantity"
+          }
+        ]
+      },
+      {
+        "text": "Do you have 3 of those available?",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 12,
+            "end": 13,
+            "value": "3",
+            "entity": "quantity"
+          }
+        ]
+      },
+      {
+        "text": "I need 4 of those models.",
+        "intent": "product_buy",
+        "entities": [
+          {
+            "start": 7,
+            "end": 8,
+            "value": "4",
+            "entity": "quantity"
+          }
+        ]
+      },
+      {
+        "text": "Can you show me some other phones?",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "Do you have any other phones?",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "I would like to see some other phones",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "Show me some more phones",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "I want to see your website policy.",
+        "intent": "show_policy",
+        "entities": []
+      },
+      {
+        "text": "Can you show me your policy?",
+        "intent": "show_policy",
+        "entities": []
+      },
+      {
+        "text": "How can I see your website policy?",
+        "intent": "show_policy",
+        "entities": []
+      },
+      {
+        "text": "What are your policies for sale and purchase?",
+        "intent": "show_policy",
+        "entities": []
+      },
+      {
+        "text": "Do you have any kind of policy?",
+        "intent": "show_policy",
+        "entities": []
+      },
+      {
+        "text": "What is the price of this?",
+        "intent": "product_price",
+        "entities": []
+      },
+      {
+        "text": "What is the rate of an apple iphone x?",
+        "intent": "product_price",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "value": "iphone x",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I want to find out the price for a samsung galaxy s10.",
+        "intent": "product_price",
+        "entities": [
+          {
+            "start": 35,
+            "end": 42,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "value": "galaxy s10",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What are the payment options?",
+        "intent": "payment_method",
+        "entities": []
+      },
+      {
+        "text": "How can I pay?",
+        "intent": "payment_method",
+        "entities": []
+      },
+      {
+        "text": "How do I send my device?",
+        "intent": "package_query",
+        "entities": []
+      },
+      {
+        "text": "How should I package my phone?",
+        "intent": "package_query",
+        "entities": []
+      },
+      {
+        "text": "Do I need to pay for the postage?",
+        "intent": "post_query",
+        "entities": []
+      },
+      {
+        "text": "Is the postage for sending packages free?",
+        "intent": "post_query",
+        "entities": []
+      },
+      {
+        "text": "How much do I need to pay for the postage service?",
+        "intent": "post_query",
+        "entities": []
+      },
+      {
+        "text": "What can I include in my package?",
+        "intent": "package_query",
+        "entities": []
+      },
+      {
+        "text": "Do I just send my phone or do I need other accessories as well?",
+        "intent": "package_query",
+        "entities": []
+      },
+      {
+        "text": "What limitations are there for the package?",
+        "intent": "package_query",
+        "entities": []
+      },
+      {
+        "text": "How many phones can I include in a package?",
+        "intent": "package_query",
+        "entities": []
+      },
+      {
+        "text": "How do I get paid for the devices I send?",
+        "intent": "payment_method",
+        "entities": []
+      },
+      {
+        "text": "How do I register so that I can sell phones?",
+        "intent": "registration_details",
+        "entities": []
+      },
+      {
+        "text": "How can I sell phones?",
+        "intent": "registration_details",
+        "entities": []
+      },
+      {
+        "text": "Do I have to register to sell or buy phones?",
+        "intent": "registration_details",
+        "entities": []
+      },
+      {
+        "text": "How will you pay me for the products I sell?",
+        "intent": "payment_method",
+        "entities": []
+      },
+      {
+        "text": "What are the charges for postage service?",
+        "intent": "post_query",
+        "entities": []
+      },
+      {
+        "text": "Bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Thank you, Goodbye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "I want to sell a phone.",
+        "intent": "product_sell",
+        "entities": []
+      },
+      {
+        "text": "How can I sell a phone?",
+        "intent": "product_sell",
+        "entities": []
+      },
+      {
+        "text": "I want to sell my apple iphone 7",
+        "intent": "product_sell",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "value": "iphone 7",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I want to sell my samsung galaxy s8",
+        "intent": "product_sell",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 26,
+            "end": 35,
+            "value": "galaxy s8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Can I sell my motorola g5?",
+        "intent": "product_sell",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "motorola",
+            "entity": "model"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "value": "g5",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "For how much can I sell my lg g6?",
+        "intent": "product_sell",
+        "entities": [
+          {
+            "start": 27,
+            "end": 29,
+            "value": "lg",
+            "entity": "brand"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "value": "g6",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "I'm here to sell my phone.",
+        "intent": "product_sell",
+        "entities": []
+      },
+      {
+        "text": "I would like to sell my nokia 8",
+        "intent": "product_sell",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 30,
+            "end": 31,
+            "value": "8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much does an apple iphone 7 cost?",
+        "intent": "product_price",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "value": "iphone 7",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much ROM does an apple iphone x have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "iphone x",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM size of an apple iphone x?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 33,
+            "end": 41,
+            "value": "iphone x",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM size of a samsung galaxy 10?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 34,
+            "end": 43,
+            "value": "galaxy 10",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does a samsung galaxy s10 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "value": "galaxy s10",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does an apple iphone x have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "value": "iphone x",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much ROM does a samsung galaxy s10 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 28,
+            "end": 38,
+            "value": "galaxy s10",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the storage size of huawei mate 20 pro?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "huawei",
+            "entity": "brand"
+          },
+          {
+            "start": 35,
+            "end": 46,
+            "value": "mate 20 pro",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM size of a huawei mate 20 pro?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "huawei",
+            "entity": "brand"
+          },
+          {
+            "start": 33,
+            "end": 44,
+            "value": "mate 20 pro",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does a huawei mate 20 pro have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "huawei",
+            "entity": "brand"
+          },
+          {
+            "start": 30,
+            "end": 41,
+            "value": "mate 20 pro",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM size of a motorola e5?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "value": "e5",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much storage does a motorola e5 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "value": "e5",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does a motorola e5 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 32,
+            "end": 34,
+            "value": "e5",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM size of an lg g6?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 27,
+            "end": 29,
+            "value": "lg",
+            "entity": "brand"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "value": "g6",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much storage does an lg g6 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 25,
+            "end": 27,
+            "value": "lg",
+            "entity": "brand"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "value": "g6",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does an lg g6 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 24,
+            "end": 26,
+            "value": "lg",
+            "entity": "brand"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "value": "g6",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM size of a nokia 8?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 32,
+            "end": 33,
+            "value": "8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much storage does a nokia 8 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 30,
+            "end": 31,
+            "value": "8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does a nokia 8 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 30,
+            "value": "8",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM of an htc one m9?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "htc",
+            "entity": "brand"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "one m9",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does an htc one m9 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "one m9",
+            "entity": "model"
+          },
+          {
+            "start": 24,
+            "end": 27,
+            "value": "htc",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "How much storage does an htc one m9 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 25,
+            "end": 28,
+            "value": "htc",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "one m9",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much memory does a nokia lumia 520 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "value": "lumia 520",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "How much storage does an nokia lumia 520 have?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 31,
+            "end": 40,
+            "value": "lumia 520",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the ROM of an nokia lumia 520?",
+        "intent": "product_storage",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "nokia",
+            "entity": "brand"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "value": "lumia 520",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What is the color available for apple iphone x?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 38,
+            "end": 46,
+            "value": "iphone x",
+            "entity": "brand"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "apple",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Does the apple iphone x come in blue?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "blue",
+            "entity": "color"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "iphone x",
+            "entity": "model"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you have the apple iphone x in red color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 34,
+            "end": 37,
+            "value": "red",
+            "entity": "color"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": "iphone x",
+            "entity": "model"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Does the samsung galaxy s10 come in yellow color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "yellow",
+            "entity": "color"
+          },
+          {
+            "start": 17,
+            "end": 27,
+            "value": "galaxy s10",
+            "entity": "model"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you have the samsung galaxy s10 in green color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "green",
+            "entity": "color"
+          },
+          {
+            "start": 24,
+            "end": 34,
+            "value": "galaxy s10",
+            "entity": "model"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "What colors are available for samsung galaxy s10?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 30,
+            "end": 37,
+            "value": "samsung",
+            "entity": "brand"
+          },
+          {
+            "start": 38,
+            "end": 48,
+            "value": "galaxy s10",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "What colors are available for motorola moto x g1?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "moto x g1",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Is the motorola moto x g1 available in silver color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "moto x g1",
+            "entity": "model"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "value": "silver",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Do you have the motorola moto x g1 available in gray color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 48,
+            "end": 52,
+            "value": "gray",
+            "entity": "color"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "motorola",
+            "entity": "brand"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "value": "moto x g1",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Does the lg g6 come in black color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "black",
+            "entity": "color"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "value": "g6",
+            "entity": "model"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "lg",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "What colors do you have available for lg g6?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 38,
+            "end": 40,
+            "value": "lg",
+            "entity": "brand"
+          },
+          {
+            "start": 41,
+            "end": 43,
+            "value": "g6",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "In what color is the htc one m9 available in?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "one m9",
+            "entity": "model"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "value": "htc",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Does the htc one m9 come in black?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "htc",
+            "entity": "brand"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "one m9",
+            "entity": "model"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "black",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Do you have the htc one m9 in silver color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "htc",
+            "entity": "brand"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "one m9",
+            "entity": "model"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "silver",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "What colors are available for the sony xperia z3?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "sony",
+            "entity": "brand"
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "xperia z3",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Is the sony xperia z3 available in black color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sony",
+            "entity": "brand"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "value": "xperia z3",
+            "entity": "model"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "value": "black",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "What colors are available for apple iphone 7?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": "iphone 7",
+            "entity": "color"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you have any apple iphone 7 in orange?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "apple",
+            "entity": "brand"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "orange",
+            "entity": "color"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": "iphone 7",
+            "entity": "model"
+          }
+        ]
+      },
+      {
+        "text": "Is the apple iphone 7 available in purple color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 35,
+            "end": 41,
+            "value": "purple",
+            "entity": "color"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "value": "iphone 7",
+            "entity": "model"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "value": "apple",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Do you have any samsung galaxy s8 available in brown color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 47,
+            "end": 52,
+            "value": "brown",
+            "entity": "color"
+          },
+          {
+            "start": 24,
+            "end": 33,
+            "value": "galaxy s8",
+            "entity": "model"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "Is the samsung galaxy s8 available in yellow color?",
+        "intent": "product_color",
+        "entities": [
+          {
+            "start": 38,
+            "end": 44,
+            "value": "yellow",
+            "entity": "color"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "galaxy s8",
+            "entity": "model"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "yeah sure",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "yes absolutely",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "yes of course",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "sure why not?",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "yes definitely",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "OK",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "okay",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "all right",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "yes please",
+        "intent": "affirmative",
+        "entities": []
+      },
+      {
+        "text": "I would like to report a complain regarding my purchase my invoice Id is ni152",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 73,
+            "end": 78,
+            "value": "ni152",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "I bought a phone recently and I am having some problems",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Yesterday I bought a phone and its not working",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Im having some troubles with my phone my invoice ID is fq376",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 55,
+            "end": 60,
+            "value": "fq376",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "Bought a phone a week earlier its not working properly",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Im having some troubles with my recently bought phone my invoice ID is gw481",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 71,
+            "end": 76,
+            "value": "gw481",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "Bought a phone from you guys on 22 March and its trash",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 32,
+            "end": 40,
+            "value": "22 March",
+            "entity": "date"
+          }
+        ]
+      },
+      {
+        "text": "You sold me a phone that doesn't even work invoice ID is hz900",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 57,
+            "end": 62,
+            "value": "hz900",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "I'd like to file a complain my invoice ID is rt451",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 45,
+            "end": 50,
+            "value": "rt451",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "I bought from you and my experience has not been good",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "It was a bad experience buying a product from you",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "How can I report a complain?",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "I bought a phone on 18 january and its having some issues",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "18 january",
+            "entity": "date"
+          }
+        ]
+      },
+      {
+        "text": "I made a purchase on 1 April and im not satisfied with it",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "1 April",
+            "entity": "date"
+          }
+        ]
+      },
+      {
+        "text": "I purchased a phone on 18 june 2018 and it has stopped working",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "18 june 2018",
+            "entity": "date"
+          }
+        ]
+      },
+      {
+        "text": "I would like to return a phone and i want my money back.",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Im having some issues with my phone My invoice ID is xa532",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 53,
+            "end": 58,
+            "value": "xa532",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "My invoice ID is gx666",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "gx666",
+            "entity": "invoice_id"
+          }
+        ]
+      },
+      {
+        "text": "I have the invoice ID as lo123",
+        "intent": "product_complain",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "lo123",
+            "entity": "invoice_id"
+          }
+        ]
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

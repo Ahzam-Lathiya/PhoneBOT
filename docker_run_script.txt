@@ -1,0 +1,5 @@
+docker run\
+   --mount type=bind,source=/home/neckai/BOT/bot/data/stories.md,target=/app/stories.md \
+   --mount type=bind,source=/home/neckai/BOT/bot/domain.yml,target=/app/domain.yml \
+   --mount type=bind,source=<OUT_PATH>,target=/app/out \
+   rasa_core train

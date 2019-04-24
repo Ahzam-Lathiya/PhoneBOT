@@ -1,0 +1,130 @@
+slots:
+    brand:
+        type : text
+    model:
+        type : text
+    ROM:
+        type : text
+    price:
+        type : float
+    quantity:
+        type : float
+    city:
+        type : text
+    territory:
+        type : text
+    state:
+        type : text
+    color:
+        type : text
+    complain_id:
+        type : text
+    invoice_id:
+        type : text
+    date:
+        type : text
+    time:
+        type : text
+intents:
+    - greeting
+    - affirmative
+    - product_ask
+    - product_sell
+    - product_buy
+    - product_price
+    - product_storage
+    - product_color
+    - product_complain
+    - payment_method
+    - customer_address
+    - delivery_details
+    - choice_other
+    - show_policy
+    - package_query
+    - post_query
+    - registration_details
+    - bye
+entities:
+    - brand
+    - model
+    - ROM
+    - price
+    - online_payment
+    - city
+    - state
+    - quantity
+    - color
+    - complain_id
+    - invoice_id
+    - date
+    - time
+templates:
+    utter_greet:
+      - 'Hello! How can I help you?'  
+      - 'Hello! How are you doing today?' 
+      - 'Hello Welcome to Kuz' 
+    utter_ask_product:
+      - 'Please specify your product'
+    utter_ask_address:
+      - 'Where are you calling from?' 
+      - 'Please tell me where you live.'
+    utter_deny:
+      - 'Sorry We do not have one of those.' 
+    utter_default:
+      - 'Sorry I did not get that.'  
+      - 'Can you please repeat?'
+    utter_check_faq:
+      - 'For more questions please refer to our FAQ page' 
+    utter_check_policy:
+      - 'Please check out our policy'
+    utter_offer:
+      - 'Can I show you something else?'
+      - 'Are you interested in something else?'
+    utter_positive:
+      - 'Yes'
+    utter_negative:
+      - 'Sorry we do not have that.'
+    utter_payment_query:
+      - 'You can choose from PayPal or Bank Transfer'
+    utter_registration_query:
+      - 'Register yourself if you want to buy or sell. If you are already registered then login.'
+    utter_package_query:
+      - 'You can include maximum of 3 phones in a package. Wrap your phones in a bubble wrap carefully. Also
+         include accessories if you mentioned them'
+    utter_post_query:
+      - 'The postage is free. However you have to pay for the first time you send your package and the postage fee
+         is reimbursed as soon as the package is received.'
+    utter_confirm:
+      - 'OK'
+      - 'All right'
+    utter_bye:
+      - 'goodbye'
+      - 'Take care, goodbye'
+      - 'Thank you, goodbye'
+    utter_invoice_id:
+      - 'Please give me your invoice ID'
+actions:
+  - utter_greet
+  - utter_ask_product
+  - utter_ask_payment
+  - utter_ask_address
+  - utter_check_policy
+  - utter_default
+  - utter_deny
+  - utter_check_faq
+  - utter_offer
+  - utter_positive
+  - utter_negative
+  - utter_payment_query
+  - utter_registration_query
+  - utter_package_query
+  - utter_post_query
+  - utter_confirm
+  - utter_invoice_id
+  - utter_bye
+  - get_product_price
+  - get_product_storage
+  - get_product_color
+  - forward_complain
+  - get_payment
+  - confirm_buy
