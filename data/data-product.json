@@ -295,7 +295,7 @@
             "start": 14,
             "end": 20,
             "value": "Paypal",
-            "entity": "online_payment"
+            "entity": "payment_option"
           }
         ]
       },
@@ -307,7 +307,7 @@
             "start": 22,
             "end": 28,
             "value": "Paypal",
-            "entity": "online_payment"
+            "entity": "payment_option"
           }
         ]
       },
@@ -319,7 +319,7 @@
             "start": 14,
             "end": 18,
             "value": "VISA",
-            "entity": "credit_card"
+            "entity": "payment_option"
           }
         ]
       },
@@ -331,7 +331,7 @@
             "start": 19,
             "end": 23,
             "value": "VISA",
-            "entity": "credit_card"
+            "entity": "payment_option"
           }
         ]
       },
@@ -343,7 +343,7 @@
             "start": 14,
             "end": 21,
             "value": "MOBIAMO",
-            "entity": "mobile_payment"
+            "entity": "payment_option"
           }
         ]
       },
@@ -355,7 +355,7 @@
             "start": 22,
             "end": 29,
             "value": "MOBIAMO",
-            "entity": "mobile_payment"
+            "entity": "payment_option"
           }
         ]
       },
@@ -367,7 +367,7 @@
             "start": 14,
             "end": 18,
             "value": "POLi",
-            "entity": "internet_bank"
+            "entity": "payment_option"
           }
         ]
       },
@@ -379,7 +379,7 @@
             "start": 22,
             "end": 26,
             "value": "Mint",
-            "entity": "prepaid_card"
+            "entity": "payment_option"
           }
         ]
       },
@@ -391,7 +391,7 @@
             "start": 19,
             "end": 23,
             "value": "POLi",
-            "entity": "internet_bank"
+            "entity": "payment_option"
           }
         ]
       },
@@ -1940,13 +1940,13 @@
         "entities": []
       },
       {
-        "text": "I would like to report a complain regarding my purchase my invoice Id is ni152",
+        "text": "I would like to report a complain regarding my purchase my invoice Id is 52",
         "intent": "product_complain",
         "entities": [
           {
             "start": 73,
-            "end": 78,
-            "value": "ni152",
+            "end": 75,
+            "value": "52",
             "entity": "invoice_id"
           }
         ]
@@ -1962,13 +1962,13 @@
         "entities": []
       },
       {
-        "text": "Im having some troubles with my phone my invoice ID is fq376",
+        "text": "Im having some troubles with my phone my invoice ID is 376",
         "intent": "product_complain",
         "entities": [
           {
             "start": 55,
-            "end": 60,
-            "value": "fq376",
+            "end": 58,
+            "value": "376",
             "entity": "invoice_id"
           }
         ]
@@ -1979,13 +1979,13 @@
         "entities": []
       },
       {
-        "text": "Im having some troubles with my recently bought phone my invoice ID is gw481",
+        "text": "Im having some troubles with my recently bought phone my invoice ID is 481",
         "intent": "product_complain",
         "entities": [
           {
             "start": 71,
-            "end": 76,
-            "value": "gw481",
+            "end": 74,
+            "value": "481",
             "entity": "invoice_id"
           }
         ]
@@ -2003,25 +2003,25 @@
         ]
       },
       {
-        "text": "You sold me a phone that doesn't even work invoice ID is hz900",
+        "text": "You sold me a phone that doesn't even work invoice ID is 900",
         "intent": "product_complain",
         "entities": [
           {
             "start": 57,
-            "end": 62,
-            "value": "hz900",
+            "end": 60,
+            "value": "900",
             "entity": "invoice_id"
           }
         ]
       },
       {
-        "text": "I'd like to file a complain my invoice ID is rt451",
+        "text": "I'd like to file a complain my invoice ID is 451",
         "intent": "product_complain",
         "entities": [
           {
             "start": 45,
-            "end": 50,
-            "value": "rt451",
+            "end": 48,
+            "value": "451",
             "entity": "invoice_id"
           }
         ]
@@ -2083,40 +2083,301 @@
         "entities": []
       },
       {
-        "text": "Im having some issues with my phone My invoice ID is xa532",
+        "text": "Im having some issues with my phone My invoice ID is 532",
         "intent": "product_complain",
         "entities": [
           {
             "start": 53,
-            "end": 58,
-            "value": "xa532",
+            "end": 56,
+            "value": "532",
             "entity": "invoice_id"
           }
         ]
       },
       {
-        "text": "My invoice ID is gx666",
+        "text": "My invoice ID is 666",
         "intent": "product_complain",
         "entities": [
           {
             "start": 17,
-            "end": 22,
-            "value": "gx666",
+            "end": 20,
+            "value": "666",
             "entity": "invoice_id"
           }
         ]
       },
       {
-        "text": "I have the invoice ID as lo123",
+        "text": "I have the invoice ID as 123",
         "intent": "product_complain",
         "entities": [
           {
             "start": 25,
-            "end": 30,
-            "value": "lo123",
+            "end": 28,
+            "value": "123",
             "entity": "invoice_id"
           }
         ]
+      },
+      {
+        "text": "I have a complain regarding your product",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "I have a complain",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "I would like to forward a complain",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Can you take my complain?",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Can you forward my complain?",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "Please give my complain to the concerned people",
+        "intent": "product_complain",
+        "entities": []
+      },
+      {
+        "text": "yo ",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Howdy",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "I have some queries",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I have some questions",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I got some questions",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "Can you help me?",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I got some queries",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "Can you help me with my queries?",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "Im a bit confused",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I need some help",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I will use paypal",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "paypal",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "I will pay you through bank transfer",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 23,
+            "end": 36,
+            "value": "bank transfer",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "I will pay you with bank transfer",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 20,
+            "end": 33,
+            "value": "bank transfer",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "I choose paypal",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "paypal",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "I choose online bank transfer",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 16,
+            "end": 29,
+            "value": "bank transfer",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "I will pay you with paypal",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "paypal",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "paypal",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "paypal",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "bank transfer",
+        "intent": "payment_method",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "bank transfer",
+            "entity": "payment_option"
+          }
+        ]
+      },
+      {
+        "text": "can you help?",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I got a question",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I got a query",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "I need help",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "help me",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "help",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "can you answer my question?",
+        "intent": "customer_queries",
+        "entities": []
+      },
+      {
+        "text": "Can you show me something else?",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "You got something else?",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "Do you have anything else?",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "You got any more products",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "You got any more",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "You have anymore?",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "show me more phones",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "I would like to see something else",
+        "intent": "choice_other",
+        "entities": []
+      },
+      {
+        "text": "I want to see some other phones",
+        "intent": "choice_other",
+        "entities": []
       }
     ],
     "regex_features": [],

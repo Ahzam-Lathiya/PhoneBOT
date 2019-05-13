@@ -110,6 +110,15 @@ class utter_invoice_id(Action):
         dispatcher.utter_template("utter_invoice_id")
         return []
 
+class utter_customer_query(Action):
+    def name(self):
+        return "utter_customer_query"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_template("utter_customer_query")
+        return []
+
+
 class Getproductprice(Action):
     def name(self):
         return "get_product_price"
@@ -254,16 +263,16 @@ class Forwardcomplain(Action):
 
         invoice = tracker.get_slot("invoice_id")
          
-        if(invoice==""):
+        if(invoice==None):
             dispatcher.utter_message("Please give us your invoice_ID")
             return []
 
-        elif(invoice!=""):
+        elif(invoice!=None):
             time= str(datetime.datetime.now())[11:19]
             date= str(datetime.datetime.now())[0:10]
                                              #obj   obj   int  
                                              #date  time  inv  
-            q = "INSERT INTO complain VALUES('{}', '{}', {})".format(date, time, invoice)
+            q = "INSERT INTO complain VALUES('{}', '{}', {}, DEFAULT)".format(date, time, invoice)
             cursor.execute(q)
 
             query = "SELECT complain_id FROM complain ORDER BY complain_id DESC LIMIT 1"

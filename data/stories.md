@@ -1,197 +1,3 @@
-## story_001
-* greeting
-  - utter_greet
-* post_query
-  - utter_post_query
-* product_price{"model" : "iphone x"}
-  - slot{"model" : "iphone x"}
-  - get_product_price
-  - slot{"price": "1828"}
-* product_buy{"quantity" : "2"}
-  - slot{"quantity" : "2"}
-  - confirm_buy
-* show_policy
-  - utter_check_policy
-* payment_method
-  - utter_payment_query
-* bye
-  - utter_bye
-
-## story_002
-* greeting
-  - utter_greet
-* product_storage{"brand": "samsung" , "model": "galaxy s8 plus"}
-  - slot{"brand": "samsung"}
-  - slot{"model": "galaxy s8 plus"}
-  - get_product_storage
-  - slot{"ROM": "64 GB"}
-* product_price{"brand": "samsung" , "model": "galaxy s8 plus"}
-  - slot{"brand": "samsung"}
-  - slot{"model" : "galaxy s8 plus"}
-  - get_product_price
-  - slot{"price": "895"}
-* show_policy
-  - utter_check_policy
-* package_query
-  - utter_package_query
-* post_query
-  - utter_post_query
-* payment_method
-  - utter_payment_query
-
-## story_003
-* greeting
-  - utter_greet
-  - utter_ask_address
-* customer_address{"city":"Melbourne" , "state":"Victoria"}
-  - slot{"city":"Melbourne" , "state":"Victoria"}
-  - utter_confirm
-* product_price{"brand": "motorola", "model": "moto x g1"}
-  - slot{"brand": "motorola"}
-  - slot{"model": "moto x g1"}
-  - get_product_price
-  - slot{"price": "289"}
-* product_storage{"model": "moto x g1"}
-  - slot{"model" : "moto x g1"}
-  - get_product_storage
-  - slot{"ROM": "16 GB"}
-* product_buy{"model": "moto x g1"}
-  - slot{"model": "moto x g1"}
-  - confirm_buy
-* payment_method
-  - utter_payment_query
-* post_query
-  - utter_post_query
-* package_query
-  - utter_package_query
-
-## story_004
-* greeting
-  - utter_greet
-  - utter_ask_address
-* customer_address{"city": "brisbane" , "state": "Queensland"}
-  - slot{"city": "brisbane"}
-  - slot{"state": "Queensland"}
-  - utter_confirm
-* product_sell
-  - utter_ask_product
-* product_price{"model": "g6"}
-  - slot{"model": "g6"}
-  - get_product_price
-  - slot{"price": "476"}
-* payment_method
-  - utter_payment_query
-* package_query
-  - utter_package_query
-* post_query
-  - utter_post_query
-
-## story_005
-* greeting
-  - utter_greet
-  - utter_ask_address
-* customer_address{"city": "Darwin", "state": "Northern Territory"}
-  - slot{"city": "Darwin"}
-  - slot{"state": "Northern Territory"}
-  - utter_confirm
-* registration_details
-  - utter_registration_query
-* bye
-  - utter_bye
-
-## story_006
-* greeting
-  - utter_greet
-  - utter_ask_address
-* customer_address{"city": "Darwin" , "state": "Northern Territory"}
-  - slot{"city": "Darwin"} 
-  - slot{"state": "Northern Territory"}
-  - utter_confirm
-* product_price{"model": "iphone 7"}
-  - slot{"model": "iphone 7"}
-  - get_product_price
-  - slot{"price": "699"}
-* show_policy
-  - utter_check_policy
-
-## story_007
-* greeting
-  - utter_greet
-  - utter_ask_address
-* show_policy
-  - utter_check_policy
-
-## story_008
-* product_price{"brand": "apple", "model": "iphone 7"}
-  - slot{"brand": "apple"}
-  - slot{"model": "iphone 7"}
-  - get_product_price
-  - slot{"price": "699"}
-
-## story_009
-* greeting
-  - utter_greet
-  - utter_ask_address
-* customer_address{"city": "Adelaide"}
-  - slot{"city": "Adelaide"}
-  - utter_confirm
-* product_storage{"brand": "samsung", "model": "galaxy a5"}
-  - slot{"brand": "samsung"}
-  - slot{"model": "galaxy a5"}
-  - get_product_storage
-  - slot{"ROM": "32 GB"}
-* product_color{"brand": "samsung", "model": "galaxy a5", "color": "black"}
-  - slot{"brand": "samsung"} 
-  - slot{"model": "galaxy a5"}
-  - slot{"color": "black"}
-  - get_product_color
-  - slot{"color": "black"}
-* show_policy
-  - utter_check_policy
-* bye
-  - utter_bye
-
-## story_010
-* greeting
-  - utter_greet
-  - utter_ask_address
-* customer_address{"city": "Canberra"}
-  - slot{"city": "Canberra"}
-  - utter_confirm
-* product_storage{"brand": "htc", "model": "one m9"}
-  - slot{"brand": "htc"}
-  - slot{"model": "one m9"}
-  - get_product_storage
-  - slot{"ROM": ""}
-  - utter_offer 
-* affirmative
-  - utter_ask_product
-* product_buy{"brand": "apple", "model": "iphone x"}
-  - slot{"brand": "apple"}
-  - slot{"model": "iphone x"}
-  - confirm_buy
-* show_policy
-  - utter_check_policy
-* bye
-  - utter_bye
-
-## story_011
-* greeting
-  - utter_greet
-  - utter_ask_product
-* product_ask{"model": "moto x g1"}
-  - slot{"model": "moto x g1"}
-  - confirm_buy
-* product_buy
-  - confirm_buy
-* product_buy{"model": "moto x g1"}
-  - slot{"model": "moto x g1"}
-  - confirm_buy
-* payment_method
-  - utter_payment_query
-* bye
-  - utter_bye
-
 ## Generated Story 4865347784937034519
 * greeting
     - utter_greet
@@ -251,17 +57,6 @@
 * bye
     - utter_bye
 
-## story_012
-* greeting
-    - utter_greet
-* product_complain
-    - utter_invoice_id
-* product_complain
-    - utter_invoice_id
-* product_complain{"invoice_id": "ya123"}
-    - slot{"invoice_id": "ya123"}
-    - forward_complain
-    - slot{"complain_id": "3"}
 ## Generated Story -7598489508093915255
 * greeting
     - utter_greet
@@ -273,12 +68,151 @@
 * product_complain{"date": "22 February"}
     - slot{"date": "22 February"}
     - forward_complain
-* product_complain{"invoice_id": "fu666"}
-    - slot{"invoice_id": "fu666"}
+* product_complain{"invoice_id": "6"}
+    - slot{"invoice_id": "6"}
     - forward_complain
     - slot{"complain_id": "2"}
 * bye
+    - utter_bye
+
+## Generated Story 990135441064089083
+* greeting
+    - utter_greet
+* product_ask
+    - utter_ask_product
+* product_ask{"brand": "samsung", "model": "galaxy a5"}
+    - slot{"brand": "samsung"}
+    - slot{"model": "galaxy a5"}
+    - confirm_buy
+    - utter_offer
+* show_policy
+    - utter_check_policy
+* payment_method
+    - utter_payment_query
+* payment_method{"payment_option": "paypal"}
     - utter_confirm
+* bye
+    - utter_bye
+
+## Generated Story 4847388262211547545
+* greeting
+    - utter_greet
+* product_price{"brand": "apple", "model": "iphone 7"}
+    - slot{"brand": "apple"}
+    - slot{"model": "iphone 7"}
+    - get_product_price
+    - slot{"price": 699}
+* product_buy
+    - confirm_buy
+* show_policy
+    - utter_check_policy
+* payment_method
+    - utter_payment_query
+* payment_method{"payment_option": "bank transfer"}
+    - slot{"payment_option": "bank transfer"}
+    - utter_confirm
+* bye
+    - utter_bye
+
+## Generated Story 1649845979161737203
+* customer_queries
+    - utter_customer_query
+* product_complain
+    - forward_complain
+* product_complain{"invoice_id": "441"}
+    - slot{"invoice_id": "441"}
+    - forward_complain
+* show_policy
+    - utter_check_policy
+* bye
+    - utter_bye
+
+## Generated Story -4840391300104724651
+* greeting
+    - utter_greet
+* product_ask
+    - utter_ask_product
+* product_storage{"brand": "htc", "model": "one m9"}
+    - slot{"brand": "htc"}
+    - slot{"model": "one m9"}
+    - get_product_storage
+    - slot{"ROM": "32 GB"}
+* product_color
+    - get_product_color
+    - slot{"color": "gold on silver"}
+* product_price{"brand": "motorola", "model": "moto x g1"}
+    - slot{"brand": "motorola"}
+    - slot{"model": "moto x g1"}
+    - get_product_price
+    - slot{"price": 289}
+* product_storage
+    - get_product_storage
+    - slot{"ROM": "16 GB"}
+* product_buy
+    - confirm_buy
+* payment_method
+    - utter_payment_query
+* payment_method{"payment_option": "Paypal"}
+    - slot{"payment_option": "Paypal"}
+    - utter_confirm
+* bye
+    - utter_bye
+
+## Generated Story -54888430910614823
+* greeting
+    - utter_greet
+* customer_queries
+    - utter_customer_query
+* payment_method
+    - utter_payment_query
+* payment_method{"payment_option": "bank transfer"}
+    - slot{"payment_option": "bank transfer"}
+    - utter_confirm
+* product_ask{"brand": "huawei", "model": "mate 20 pro"}
+    - slot{"brand": "huawei"}
+    - slot{"model": "mate 20 pro"}
+    - confirm_buy
+* choice_other
+    - utter_ask_product
+* product_buy{"brand": "apple", "model": "iphone 7"}
+    - slot{"brand": "apple"}
+    - slot{"model": "iphone 7"}
+    - confirm_buy
+* show_policy
+    - utter_check_policy
+* bye
+    - utter_bye
+
+## Generated Story -78410793372934405
+* greeting
+    - utter_greet
+* customer_queries
+    - utter_customer_query
+* product_complain
+    - forward_complain
+* product_complain{"invoice_id": "662"}
+    - slot{"invoice_id": "662"}
+    - forward_complain
+* show_policy
+    - utter_check_policy
+* bye
+    - utter_bye
+
+## Generated Story -2573705729008154744
+* greeting
+    - utter_greet
+* customer_queries
+    - utter_customer_query
+* product_buy
+    - confirm_buy
+* product_buy{"brand": "apple", "model": "iphone 7"}
+    - slot{"brand": "apple"}
+    - slot{"model": "iphone 7"}
+    - confirm_buy
+* payment_method
+    - utter_payment_query
+* show_policy
+    - utter_check_policy
 * bye
     - utter_bye
 

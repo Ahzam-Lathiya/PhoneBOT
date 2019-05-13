@@ -25,6 +25,11 @@ slots:
         type : text
     time:
         type : text
+    payment_option:
+        type : categorical
+        values:
+        - paypal
+        - bank_tranfer
 intents:
     - greeting
     - affirmative
@@ -37,6 +42,7 @@ intents:
     - product_complain
     - payment_method
     - customer_address
+    - customer_queries
     - delivery_details
     - choice_other
     - show_policy
@@ -49,7 +55,7 @@ entities:
     - model
     - ROM
     - price
-    - online_payment
+    - payment_option
     - city
     - state
     - quantity
@@ -68,24 +74,24 @@ templates:
     utter_ask_address:
       - 'Where are you calling from?' 
       - 'Please tell me where you live.'
-    utter_deny:
-      - 'Sorry We do not have one of those.' 
     utter_default:
       - 'Sorry I did not get that.'  
       - 'Can you please repeat?'
     utter_check_faq:
       - 'For more questions please refer to our FAQ page' 
     utter_check_policy:
-      - 'Please check out our policy'
+      - text: 'follow the link https://www.kuz.com.au/policies'
     utter_offer:
       - 'Can I show you something else?'
       - 'Are you interested in something else?'
-    utter_positive:
-      - 'Yes'
-    utter_negative:
-      - 'Sorry we do not have that.'
+      - 'Will that be all?'
     utter_payment_query:
-      - 'You can choose from PayPal or Bank Transfer'
+      - text : 'You can choose from:'
+        buttons: 
+        - title: "Paypal"
+          payload: '/choose{"payment" : "Paypal"}'
+        - title: "Bank Transfer"
+          payload: '/choose{"payment": "Bank Transfer"}'
     utter_registration_query:
       - 'Register yourself if you want to buy or sell. If you are already registered then login.'
     utter_package_query:
@@ -103,6 +109,9 @@ templates:
       - 'Thank you, goodbye'
     utter_invoice_id:
       - 'Please give me your invoice ID'
+    utter_customer_query:
+      - 'How can I help you?'
+
 actions:
   - utter_greet
   - utter_ask_product
@@ -110,12 +119,10 @@ actions:
   - utter_ask_address
   - utter_check_policy
   - utter_default
-  - utter_deny
   - utter_check_faq
   - utter_offer
-  - utter_positive
-  - utter_negative
   - utter_payment_query
+  - utter_customer_query
   - utter_registration_query
   - utter_package_query
   - utter_post_query

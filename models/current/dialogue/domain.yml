@@ -7,12 +7,10 @@ actions:
 - utter_ask_address
 - utter_check_policy
 - utter_default
-- utter_deny
 - utter_check_faq
 - utter_offer
-- utter_positive
-- utter_negative
 - utter_payment_query
+- utter_customer_query
 - utter_registration_query
 - utter_package_query
 - utter_post_query
@@ -32,7 +30,7 @@ entities:
 - model
 - ROM
 - price
-- online_payment
+- payment_option
 - city
 - state
 - quantity
@@ -63,6 +61,8 @@ intents:
 - payment_method:
     use_entities: true
 - customer_address:
+    use_entities: true
+- customer_queries:
     use_entities: true
 - delivery_details:
     use_entities: true
@@ -103,6 +103,12 @@ slots:
   model:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  payment_option:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - paypal
+    - bank_tranfer
   price:
     initial_value: null
     max_value: 1.0
@@ -135,33 +141,35 @@ templates:
   utter_check_faq:
   - text: For more questions please refer to our FAQ page
   utter_check_policy:
-  - text: Please check out our policy
+  - text: follow the link https://www.kuz.com.au/policies
   utter_confirm:
   - text: OK
   - text: All right
+  utter_customer_query:
+  - text: How can I help you?
   utter_default:
   - text: Sorry I did not get that.
   - text: Can you please repeat?
-  utter_deny:
-  - text: Sorry We do not have one of those.
   utter_greet:
   - text: Hello! How can I help you?
   - text: Hello! How are you doing today?
   - text: Hello Welcome to Kuz
   utter_invoice_id:
   - text: Please give me your invoice ID
-  utter_negative:
-  - text: Sorry we do not have that.
   utter_offer:
   - text: Can I show you something else?
   - text: Are you interested in something else?
+  - text: Will that be all?
   utter_package_query:
   - text: You can include maximum of 3 phones in a package. Wrap your phones in a
       bubble wrap carefully. Also include accessories if you mentioned them
   utter_payment_query:
-  - text: You can choose from PayPal or Bank Transfer
-  utter_positive:
-  - text: 'Yes'
+  - buttons:
+    - payload: '/choose{"payment" : "Paypal"}'
+      title: Paypal
+    - payload: '/choose{"payment": "Bank Transfer"}'
+      title: Bank Transfer
+    text: 'You can choose from:'
   utter_post_query:
   - text: The postage is free. However you have to pay for the first time you send
       your package and the postage fee is reimbursed as soon as the package is received.
